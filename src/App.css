@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+/* font-family: 'Nunito Sans', sans-serif; */
+
+/* root variables */
+:root{
+  --blue:#26567B;
+  --white:#F4F1EC;
+  --font:'Nunito Sans', sans-serif;
+}
+ 
+body{
+  background-color: var(--white);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+
+img{
+  width: 100%;
+}
+
+input, textarea{
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid black;
+}
+
+.btn{
+  padding: 7px 22px;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-outline, .btn-outline:hover{
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-white,.btn-white:hover{
+  background-color: var(--white);
+  color: black;
+}
+
+.btn-blue,.btn-blue:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.heading{
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.container{
+  padding: 5% 0;
+}
+
+/* navbar css */
+.nav-container{
+  background-color: var(--blue);
+  padding: 10px 20px;
+}
+
+.brand-logo img{
+  width: 200px;
+}
+
+.nav-list{
+  list-style: none;
+  color: var(--white);
+  width: 400px;
+  margin: 0;
+}
+
+.user-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.login-form{
+  display: none;
+  position: absolute;
+  width: 300px;
+  background-color: var(--white);
+  color: black;
+  padding: 20px;
+  right: 92px;
+  top: 55px;
+  z-index: 999;
+}
+
+.login-form input{
+  padding: 3px 5px;
+}
+
+.login-form span{
+  position: absolute;
+  top: 192px;
+  right: 140px;
+  background-color: var(--white);
+  padding: 0 5px;
+}
+
+.login-form svg{
+  margin-right: 5px;
+}
+
+.login-form .btn{
+  width: 100%;
+  margin: 10px 0;
+}
+
+#login:hover .login-form{
+  display: block;
+}
+
+/* test page, result page, drop and drag page css */
+.test-page, .test-img, .result-page .result-img{
+  height: 100%;
+}
+
+.dropzone{
+  border: 2px dashed gray;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.dropzone span{
+  position: absolute;
+  top: 70px;
+  left: 300px;
+  background: var(--white);
+  padding: 0 10px;
+}
+
+.actions .btn{
+  margin-right: 10px;
+}
+
+.result-page .btn{
+  width: fit-content;
+}
+
+/* home page css */
+.hero-section{
+  background-image: url('assets/hero-section.png');
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  padding:  11% 20%;
+}
+
+.team-section{
+  height: 80vh;
+  background-image: url(assets/team-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.team-section .row{
+  margin-top: 3rem;
+}
+
+.team-section h1{
+  color: var(--white);
+}
+
+.team-card{
+  background-color: var(--white);
+  padding: 20px;
+  width: 250px;
+}
+.team-card img{
+  width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.team-card p{
+  margin-bottom: 5px;
+}
+
+.team-card svg{
+  margin: 0 8px;
+  margin-top: 1.5rem;
+}
+
+.contact-section img{
+  height: fit-content;
+  margin-top: 1.5rem;
+}
+
+.contact-section input, .contact-section textarea{
+  margin-bottom: 8px;
+  padding: 5px 10px;
+} 
